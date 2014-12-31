@@ -122,7 +122,7 @@ mat &lt;- confusionMatrix(test_class, predict(train_pre_rf, newdata = test_pre))
 <div id="model-testing" class="section level3">
 <h3>Model testing</h3>
 <p>The test data were transformed and imputed using the functions developed on the training set. When the trained model was applied to the test set, 11 out of 4904 timepoints were classified incorrectly (Accuracy: 99.8%, Kappa: 99.7%).</p>
-<p>We expect an <strong>out of sample error</strong> of 99.8%, based on our 25% test set.</p>
+<p>We expect an <strong>out of sample error</strong> of 0.2%, based on our 25% test set.</p>
 <div id="test-set-confusion-matrix" class="section level4">
 <h4>Test set confusion matrix</h4>
 <pre class="r"><code>kable(mat$table)</code></pre>

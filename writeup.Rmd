@@ -95,7 +95,7 @@ The `caret` package was used to train a random forest model. The model gave Accu
 
 The test data were transformed and imputed using the functions developed on the training set. When the trained model was applied to the test set, `r sum(mat$table) - sum(diag(mat$table))` out of `r sum(mat$table)` timepoints were  classified incorrectly (Accuracy: `r 100*round(mat$overall["Accuracy"],3)`%, Kappa: `r 100*round(mat$overall["Kappa"],3)`%).
 
-We expect an **out of sample error** of `r 100*round(mat$overall["Accuracy"],3)`%, based on our 25% test set.
+We expect an **out of sample error** of `r 100*(1-round(mat$overall["Accuracy"],3))`%, based on our 25% test set.
 
 
 #### Test set confusion matrix

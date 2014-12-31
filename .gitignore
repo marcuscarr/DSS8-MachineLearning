@@ -11,3 +11,5 @@
 .Rproj.user/
 .Rproj.user
 
+# Problem-specific files
+*.txt
